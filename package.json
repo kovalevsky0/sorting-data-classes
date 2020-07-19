@@ -1,0 +1,25 @@
+{
+  "name": "sorting-app",
+  "version": "1.0.0",
+  "description": "Write a API interface for sorting array of numbers and strings;",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "build": "tsc -w",
+    "execute": "nodemon dist/main.js",
+    "start": "concurrently \"npm:build\" \"npm:execute\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "ts-jest": "^26.1.3",
+    "typescript": "^3.9.7"
+  }
+}
